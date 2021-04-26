@@ -38,5 +38,12 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
-  }
+  },
+  "keywords": [
+    "next",
+    "url",
+    "watcher",
+    "watch",
+    "observe"
+  ]
 }
