@@ -12,16 +12,16 @@ npm install -S @jswork/next-url-watcher
 ```
 
 ## apis
-| api   | params        | description         |
-| ----- | ------------- | ------------------- |
-| init  | ({ interval}) | Initial a nx class. |
-| watch | callback      | Watch url change.   |
+| api   | params                    | description         |
+| ----- | ------------------------- | ------------------- |
+| init  | ({ interval, immediate }) | Initial a nx class. |
+| watch | callback                  | Watch url change.   |
 
 ## usage
 ```js
 import NxUrlWatcher from '@jswork/next-url-watcher';
 
-const wather = new NxUrlWatcher();
+const wather = new NxUrlWatcher({ immediate: true });
 
 wather.watch((old, current) => {
   console.log(old, current);
