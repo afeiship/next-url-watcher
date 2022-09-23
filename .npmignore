@@ -12,6 +12,7 @@ gulpfile.js
 .prettierrc
 Gemfile
 jest.config.js
+jest.setup.js
 LICENSE.txt
 Rakefile
 .vscode
