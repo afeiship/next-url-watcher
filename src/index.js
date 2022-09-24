@@ -21,7 +21,6 @@
         }, this.options.interval);
 
         return {
-          id: timer,
           destroy: function () {
             clearInterval(timer);
           }
