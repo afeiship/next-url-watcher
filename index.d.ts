@@ -7,9 +7,14 @@ type Options = {
   immediate: boolean
 }
 
+type WatchCallback = (previous: string, current: string) => void;
+
+type UrlWatcher = {
+  watch(callback: WatchCallback): Destroyable;
+}
+
 interface NxStatic {
   UrlWatcher: {
-    new(options: Options)
-    watch(callback: any): Destroyable;
+    new(options: Partial<Options>): UrlWatcher
   }
 }
