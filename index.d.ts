@@ -15,6 +15,6 @@ type UrlWatcher = {
 
 interface NxStatic {
   UrlWatcher: {
-    new(options: Partial<Options>): UrlWatcher
+    new(options?: Partial<Options>): UrlWatcher
   }
 }
